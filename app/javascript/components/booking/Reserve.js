@@ -17,61 +17,34 @@ function Reserve() {
   const [developerid, setDeveloperid] = useState("");
   return (
     <div>
-      <h2 className="reserve-heading">Reserve a developer</h2>
-      <div className="d-flex flex-column align-items-center justify-content-center">
-        <h2 className="text-center">Please select a developer</h2>
-        <select
-          onChange={(e) => setDeveloperid(e.target.value)}
-          className="w-75 h-25 form-select my-1"
-        >
+      <h1>Reserve</h1>
+      <div>
+        <select onChange={(e) => setDeveloperid(e.target.value)}>
           {developers.map((developer) => (
             <option key={developer.id} value={developer.id}>
               {developer.name}
             </option>
           ))}
         </select>
-        <div className="input-group mb-3 w-75 my-1">
-          <label className="input-group-text" for="inputGroupSelect01">
-            Date
-          </label>
-          <input
-            type="date"
-            className="form-control"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-          />
-        </div>
-        <div className="input-group mb-3 w-75 my-1">
-          <label className="input-group-text" for="inputGroupSelect01">
-            Time
-          </label>
-          <input
-            type="time"
-            className="form-control"
-            value={time}
-            onChange={(e) => setTime(e.target.value)}
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-          />
-        </div>
-        <div className="input-group mb-3 w-75 my-1">
-          <label className="input-group-text" for="inputGroupSelect01">
-            City
-          </label>
-          <input
-            type="city"
-            value={city}
-            onChange={(e) => setCity(e.target.value)}
-            className="form-control"
-            placeholder="Your city"
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-          />
-        </div>
+        <label htmlFor="date">Date</label>
+        <input
+          type="date"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+        />
+        <label htmlFor="time">Time</label>
+        <input
+          type="time"
+          value={time}
+          onChange={(e) => setTime(e.target.value)}
+        />
+        <label htmlFor="city">City</label>
+        <input
+          type="text"
+          value={city}
+          onChange={(e) => setCity(e.target.value)}
+        />
         <button
-          className="btn btn-primary w-75 my-1"
           onClick={(e) => {
             e.preventDefault();
             fetch("/api/v1/bookings", {
@@ -105,8 +78,8 @@ function Reserve() {
         >
           Add Booking
         </button>
+        <ToastContainer />
       </div>
-      <ToastContainer />
     </div>
   );
 }
