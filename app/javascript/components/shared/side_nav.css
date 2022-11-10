@@ -1,7 +1,7 @@
 .sidenav {
   display: flex;
   flex-direction: column;
-  height: 92vh;
+  height: 100%;
   width: 18vw;
   background-color: rgb(255, 255, 255);
   padding-top: 1rem;
@@ -29,6 +29,7 @@
 .main {
   display: flex;
   flex-direction: row;
+  min-height: 100%;
 }
 
 h1 {
@@ -43,4 +44,5 @@ h1 {
 .social-cont {
   height: 60px;
   margin-top: auto;
+  margin-bottom: 10%;
 }

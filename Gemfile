@@ -1,11 +1,14 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.0'
+ruby '3.1.2'
 
-# An authentication token for verifying that users are who they claim to be.
+# An authentication gem for verifying that users are who they claim to be.
 gem 'devise'
+
+# CanCan is an authorization library for ROR which restricts what resources a given user is allowed to access.
 gem 'cancancan'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
 

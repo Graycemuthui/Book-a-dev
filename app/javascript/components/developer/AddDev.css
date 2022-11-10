@@ -271,11 +271,20 @@ button.btn.btn--pill.btn--green:hover {
 }
 
 .btn--green {
-  background: #57b846;
+  background: #57b846 !important;
 }
 
 .btn--green:hover {
-  background: #4dae3c;
+  background: #4dae3c !important;
+  animation: tilt-shaking 0.9s;
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
 }
 
 /* ==========================================================================

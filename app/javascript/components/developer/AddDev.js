@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./AddDev.css";
 
 function AddDev() {
@@ -109,10 +111,27 @@ function AddDev() {
                       .then((data) => {
                         dispatch(fetchDevelopers());
                       });
+
+                    toast.success("You have succesfully added developer.", {
+                      position: "top-center",
+                      autoClose: 5000,
+                      hideProgressBar: false,
+                      closeOnClick: true,
+                      pauseOnHover: true,
+                      draggable: true,
+                      progress: undefined,
+                      theme: "light",
+                    });
+                    setDeveloperPhoto('');
+                    setDeveloperName('');
+                    setDeveloperEmail('');
+                    setDeveloperStack('');
+                    setDeveloperBio('');
                   }}
                 >
                   Add Developer
                 </button>
+                <ToastContainer />
               </div>
             </form>
           </div>

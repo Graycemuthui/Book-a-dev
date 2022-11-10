@@ -13,7 +13,11 @@
  *= require_tree .
  *= require_self
  */
- 
+
+ #root {
+  height: 100vh;
+ }
+
 .image {
   height: 300px;
   width: 300px;
