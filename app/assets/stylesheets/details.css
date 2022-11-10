@@ -1,27 +1,32 @@
-
-.info-cont h2, .info-cont p:first-of-type  {  
+.info-cont h2,
+.info-cont p:first-of-type {
   text-align: right;
 }
 
 .info-cont {
   width: 20vw;
- 
 }
-.contacts :nth-child(odd) {  
+
+.info-cont a {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.contacts :nth-child(odd) {
   background-color: rgb(208, 206, 203);
 }
 
-.contacts p {  
+.contacts p {
   margin: 0;
 }
 
 .btn {
-    background-color: rgb(94, 153, 36);
-    margin-top: 1rem;
+  background-color: rgb(94, 153, 36);
+  margin-top: 1rem;
 }
 
 p {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .developer {
@@ -34,8 +39,7 @@ p {
   margin-top: 2rem;
   width: 70px;
   height: 50px;
-border-top-right-radius: 45%;
-border-bottom-right-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-right-radius: 45%;
   background-color: rgb(94, 153, 36);
-
 }

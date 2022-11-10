@@ -1,2 +1,2 @@
-web: rails server -p 3002
+web: rails server -p 3001
 js: yarn build --watch

@@ -46,14 +46,14 @@ function Bookings() {
         </div>
       ))
     ) : (
-      <div className="reservations">
-        <h2>No bookings</h2>
+      <div>
+        <h4 className="reservations">No bookings.</h4>
       </div>
     );
 
   return (
     <div>
-      <h2 className="reservation-heading">Bookings</h2>
+      <h1 className="reservation-heading">Bookings</h1>
       <div className="display-reservations">{displayBookings}</div>
     </div>
   );
