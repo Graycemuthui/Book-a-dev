@@ -10,11 +10,12 @@ import {
   faInstagram,
   faGooglePlus,
 } from "@fortawesome/free-brands-svg-icons";
+import Micro from "./micronauts.png"
 
 const SideNav = () => {
   return (
     <nav className="sidenav">
-      <img src="https://th.bing.com/th/id/OIP.5Gn2Q1GP_6LtqjQeHt8fLAHaEo?pid=ImgDet&rs=1" alt="logo" className="logo " />
+      <img src={Micro} alt="logo" className="logo " />
       <NavLink to="/" activeClassName="selected">DEVELOPERS</NavLink>
       <NavLink to="/reserve" activeClassName="selected">RESERVE</NavLink>
       <NavLink to="/bookings" activeClassName="selected">MY RESERVATIONS</NavLink>

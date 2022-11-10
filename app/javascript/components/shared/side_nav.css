@@ -22,11 +22,9 @@
   color: white;
 }
 
-
-
 .logo {
-  height: 15vh;
-  width:20vw;
+  align-self: center;
+  width: 80%;
 }
 
 .main {
@@ -45,5 +43,5 @@ h1 {
 
 .social-cont {
   height: 60px;
- margin-top: auto;
+  margin-top: auto;
 }
