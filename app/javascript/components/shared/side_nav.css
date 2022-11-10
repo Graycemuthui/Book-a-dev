@@ -1,0 +1,47 @@
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  height: 92vh;
+  width: 18vw;
+  background-color: rgb(255, 255, 255);
+  padding-top: 1rem;
+  border-right: 1px solid rgb(221, 216, 216);
+}
+
+.sidenav a {
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  display: block;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.active {
+  background-color: rgb(94, 153, 36);
+  color: white;
+}
+
+.logo {
+  height: 15vh;
+  width: 18vw;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  font-family: "vespa", sans-serif;
+}
+
+.social-wraper {
+  display: flex;
+  flex-direction: row;
+  justify-self: end;
+}
+
+.social-cont {
+  height: 60px;
+  margin-top: auto;
+}

@@ -1,0 +1,58 @@
+
+p {
+  font-weight: 500;
+}
+
+.contacts p,
+.contacts a {
+  margin: 0;
+  font-size: 20px;
+}
+
+.info-cont h2,
+.info-cont p:first-of-type {
+  text-align: right;
+}
+
+.info-cont {
+  width: 20vw;
+}
+
+.info-cont a {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.contacts :nth-child(odd) {
+  background-color: rgb(208, 206, 203);
+}
+
+.btn {
+  background-color: rgb(94, 153, 36);
+  margin-top: 1rem;
+}
+
+.developer {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+
+.back {
+  margin-top: 2rem;
+  width: 70px;
+  height: 50px;
+  border-top-right-radius: 45%;
+  border-bottom-right-radius: 45%;
+  background-color: rgb(94, 153, 36);
+  color: white;
+  text-align: right;
+  padding-top: 12px;
+  padding-right: 14px;
+  font-size: 16px;
+}
+
+.rounded-pill {
+  margin-top: 8rem;
+  margin-left: 4rem;
+}

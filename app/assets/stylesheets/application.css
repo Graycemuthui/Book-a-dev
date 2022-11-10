@@ -1,0 +1,209 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.image {
+  height: 20vw;
+  width: 50vw;
+  border-radius: 50%;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  color: blueviolet;
+  padding: 34rem 33.47rem 20rem;
+  font-size: 1rem;
+  background-image: url('https://hks-siblab.org/wp-content/uploads/2020/11/Software-Engineer-vs.-Computer-Engineer.jpg');
+  text-align: center;
+}
+
+.booking-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(245, 239, 239);
+  margin: -20rem 0 0 0;
+  padding: 5px 5px 2px;
+  font-size: 1.62rem;
+  text-align: center;
+}
+
+.image-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainpage-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-para {
+  color: gray;
+  margin: 0;
+}
+
+.display-dev {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dev-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.icon-items {
+  border: 1px solid black;
+  border-radius: 40%;
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.form {
+  margin-left: 5rem;
+}
+
+.dev-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dev-image {
+  height: 75vh;
+  width: 40vw;
+  border-radius: 30px;
+  padding: 2rem;
+}
+
+.image-dev {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3vw;
+}
+
+.mainpage-items a {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.8rem;
+  background-color: rgb(94, 153, 36);
+  height: 10vh;
+}
+
+.links a {
+  color: rgb(235, 235, 235);
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 3px;
+  margin-left: 3rem;
+}
+
+.links a:hover {
+  background-color: rgb(64, 82, 7);
+  color: rgba(140, 152, 25, 0.684);
+}
+
+.user-email {
+  color: rgb(48, 43, 43);
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.mainpage-items {
+  width: 82vw;
+}
+
+.mainpage {
+  padding: 30px;
+}
+
+.routes-cont {
+  width: 100%;
+}
+
+.reserve-dev {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.display-reservations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.reserve-dev:hover {
+  background-color: rgb(94, 153, 36);
+  color: #fff;
+}
+
+.reservation-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+.user {
+  width: 45px;
+  height: 45px;
+}
+
+.reservations {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.sign {
+  align-self: center;
+  margin-top: 10px;
+}
+
+.splide__arrow {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
