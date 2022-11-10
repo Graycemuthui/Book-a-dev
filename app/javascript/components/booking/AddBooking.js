@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
 
+import "react-toastify/dist/ReactToastify.css";
 function AddBooking() {
   const params = useParams();
   const [date, setDate] = useState("");
@@ -28,6 +30,7 @@ function AddBooking() {
           value={city}
           onChange={(e) => setCity(e.target.value)}
         />
+
         <button
           onClick={(e) => {
             e.preventDefault();
@@ -43,10 +46,21 @@ function AddBooking() {
                 developer_id: Number(params.id),
               }),
             });
+            toast.success("You have succesfully booked this developer", {
+              position: "top-center",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "light",
+            });
           }}
         >
           Add Booking
         </button>
+        <ToastContainer />
       </div>
     </div>
   );

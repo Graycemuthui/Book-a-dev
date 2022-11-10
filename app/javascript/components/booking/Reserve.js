@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchDevelopers } from "../redux/developer";
+import { ToastContainer, toast } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 
 function Reserve() {
   const dispatch = useDispatch();
@@ -53,13 +56,29 @@ function Reserve() {
                 date: date,
                 time: time,
                 city: city,
-                developer_id: Number(developerid),
+                developer_id: developerid,
               }),
+            })
+              .then((response) => response.json())
+              .then((data) => {
+                console.log(data);
+              });
+
+            toast.success("You have succesfully booked this developer", {
+              position: "top-center",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "light",
             });
           }}
         >
           Add Booking
         </button>
+        <ToastContainer />
       </div>
     </div>
   );

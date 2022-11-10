@@ -7,6 +7,7 @@ import AddBooking from "./booking/AddBooking";
 import Bookings from "./booking/Bookings";
 import AddDev from "./developer/AddDev";
 import DeleteDevelopers from "./developer/DeleteDevelopers";
+import Reserve from "./booking/Reserve";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/bookings" element={<Bookings />} />
         <Route path="/add-developer" element={<AddDev />} />
         <Route path="/delete-developers" element={<DeleteDevelopers />} />
+        <Route path="/reserve" element={<Reserve />} />
       </Routes>
       </div>
       </div>

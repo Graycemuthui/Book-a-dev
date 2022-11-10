@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchDevelopers } from "../redux/developer";
+import { ToastContainer, toast } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 
 function DeleteDevelopers() {
   const dispatch = useDispatch();
   const [fetchedDevelopers, setFetchedDevelopers] = useState([]);
   const developers = useSelector((state) => state.developers.developers);
+
   useEffect(() => {
     dispatch(fetchDevelopers());
     setFetchedDevelopers(developers);
@@ -27,10 +31,22 @@ function DeleteDevelopers() {
             .then((data) => {
               setFetchedDevelopers(data);
             });
+
+          toast.success("You have succesfully deleted this developer", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
         }}
       >
         Delete
       </button>
+      <ToastContainer />
     </div>
   ));
 
