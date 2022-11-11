@@ -13,11 +13,29 @@
  *= require_tree .
  *= require_self
  */
+ html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+}
 
 .image {
+  border: 1px solid black;
+  /* max-height: 100%; */
   height: 20vw;
   width: 50vw;
   border-radius: 50%;
+  overflow: auto;
 }
 
 .booking-form {
@@ -69,6 +87,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 5px 0;
+}
+
+.splide__slide {
+  margin: 0 !important;
 }
 
 .icons {
@@ -109,6 +132,7 @@ a {
   display: flex;
   flex-direction: column;
   margin-right: 3vw;
+  padding: 0 10px;
 }
 
 .mainpage-items a {
@@ -146,6 +170,10 @@ a {
 
 .mainpage-items {
   width: 82vw;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
 }
 
 .mainpage {

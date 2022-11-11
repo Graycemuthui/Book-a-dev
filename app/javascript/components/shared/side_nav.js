@@ -11,6 +11,7 @@ import {
   faInstagram,
   faGooglePlus,
 } from "@fortawesome/free-brands-svg-icons";
+import Micronauts from '../../../assets/images/MICRONAUTS.png'
 
 const SideNav = () => {
   const dispatch = useDispatch();
@@ -23,7 +24,7 @@ const SideNav = () => {
   return (
     <nav className="sidenav">
       <img
-        src="https://th.bing.com/th/id/OIP.5Gn2Q1GP_6LtqjQeHt8fLAHaEo?pid=ImgDet&rs=1"
+        src={Micronauts}
         alt="logo"
         className="logo "
       />
@@ -48,7 +49,6 @@ const SideNav = () => {
       ) : null}
       <div
         className="d-flex flex-column align-items-center justify-content-center social-cont"
-        style={{ height: "50%" }}
         data-test="navigationLinks"
       >
         <p className="social-wraper">
