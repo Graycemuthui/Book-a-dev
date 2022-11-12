@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import Footer from "../developer/footer";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchUser } from "../redux/users";
-import logo from "../../../assets/images/MICRONAUTS.png"
+import logo from "../../../assets/images/MICROBG.png"
 
 const SideNav = () => {
   const dispatch = useDispatch();

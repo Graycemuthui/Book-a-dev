@@ -37,6 +37,15 @@ h1 {
   justify-self: end;
 }
 
+.logo {
+  animation: mymove 5s;
+  animation-delay: 2s;
+}
+
+@keyframes mymove {
+  50% {transform: rotate(360deg);}
+}
+
 .social-cont {
   /* height: 60px; */
   margin-top: auto;
