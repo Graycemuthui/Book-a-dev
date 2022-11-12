@@ -131,6 +131,34 @@ button {
   border: none;
 }
 
+.add-btnno {
+  color: #fff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(to bottom left, #2e332cf7 40%, #00ff16a8 100%);
+  margin-top: 1rem;
+  line-height: 40px;
+}
+
+.add-btnno:hover {
+  animation: horizontal-shaking 0.9s;
+}
+
+@keyframes horizontal-shaking {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(5px); }
+  50% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
 /* ==========================================================================
      #PAGE WRAPPER
      ========================================================================== */
@@ -188,9 +216,9 @@ h6 {
   background: #fa4251;
 }
 
-.bg-gra-01 {
+/* .bg-gra-01 {
   background: linear-gradient(to top, #c2fbc3 0%, #1d2f5a 100%);
-}
+} */
 
 /* ==========================================================================
      #SPACING
@@ -502,8 +530,8 @@ input {
 
 .card-3 .card-heading {
   background:
-    url("https://images.unsplash.com/photo-1624313976899-0fd4989a2fcd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA5fHxkZXZlbG9wZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60")
-    top left/cover no-repeat;
+    url("https://i.pinimg.com/originals/fb/c4/6a/fbc46a1af5f511d9deff0bd8b3689778.jpg")
+    top center/cover no-repeat;
   display: table-cell;
   width: 50%;
 }
