@@ -19,8 +19,6 @@ const Developer = () => {
     (developer) => developer.id === parseInt(params.id)
   );
 
-  console.log(developers);
-
   const displayDeveloper = foundDeveloper ? (
     <div className="developer">
       <div className="image-dev">
@@ -32,12 +30,12 @@ const Developer = () => {
       <div className="info-cont" >
         <div className="info-cont2">
           <h2>{foundDeveloper.name}</h2>
+          <p className="p-2 bio">- {foundDeveloper.bio}</p>
         </div>
         <div className="contacts">
-          <p className="p-2 bio">Bio: {foundDeveloper.bio}</p>
-          <p className="p-2">Email: {foundDeveloper.email}</p>
-          <p className="p-2">City: {foundDeveloper.city}</p>
-          <p className="p-2">Phone: {foundDeveloper.phone}</p>
+          <p className="p-2">Email : {foundDeveloper.email}</p>
+          <p className="p-2">City : {foundDeveloper.city}</p>
+          <p className="p-2">Phone : {foundDeveloper.phone}</p>
           <a href={foundDeveloper.github} className="p-2 ">
             Github : {foundDeveloper.name}
           </a>

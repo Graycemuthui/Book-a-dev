@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
-  root "root#index"
-  devise_scope :user do
-    get "/users/sign_out" => "devise/sessions#destroy"
+  root  'root#index'
+  devise_scope :user do 
+    get '/users/sign_out' => 'devise/sessions#destroy'
   end
   namespace :api do
     namespace :v1 do
@@ -15,5 +15,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  get "*path", to: "root#index", via: :all
+  get '*path', to: 'root#index', via: :all
 end

@@ -1,10 +1,12 @@
 <div class = "links d-flex justify-content-end align-items-end " >
   <% if user_signed_in? %>
-    <%= link_to "Sign Out", destroy_user_session_path, method: :delete ,class:"btn btn-danger" %>
-    <%= image_tag("user-logo.png", :alt => "logo", :class => "user") %>
-    <h2 class = "text-dark"> <%= current_user.name%></h2>
+ <%= link_to "Sign Out", destroy_user_session_path, method: :delete ,class:"btn btn-danger" %>
+  <%= image_tag("user-logo.png", :alt => "logo", :class => "user") %>
+  <h2 class = "text-dark"> <%= current_user.name%></h2>
   <% else %>
-    <%= link_to "Sign In", new_user_session_path %>
-    <%= link_to "Sign Up", new_user_registration_path %>
+  <%= link_to "Sign In", new_user_session_path %>
+  <%= link_to "Sign Up", new_user_registration_path %>
   <% end %>
 </div>
+
+

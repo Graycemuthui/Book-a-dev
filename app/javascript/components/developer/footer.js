@@ -12,6 +12,7 @@ const Footer = () => {
   return (
     <div
       className="d-flex flex-column align-items-center justify-content-center social-cont"
+      style={{ height: "50%" }}
       data-test="navigationLinks"
     >
       <p className="social-wraper">

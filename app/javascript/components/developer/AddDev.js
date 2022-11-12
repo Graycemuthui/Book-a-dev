@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-
 
 const AddDev = () => {
   const [developerName, setDeveloperName] = useState("");
@@ -9,9 +6,6 @@ const AddDev = () => {
   const [developerStack, setDeveloperStack] = useState("");
   const [developerBio, setDeveloperBio] = useState("");
   const [developerPhoto, setDeveloperPhoto] = useState("");
-  const [developerCity, setDeveloperCity] = useState("");
-  const [developerPhone, setDeveloperPhone] = useState("");
-  const [developerGithub, setDeveloperGithub] = useState("");
 
   const uploadImage = (files) => {
     const formData = new FormData();
@@ -93,45 +87,9 @@ const AddDev = () => {
                   }}
                 />
               </div>
-              <div class="input-group">
-                <input
-                  class="input--style-3"
-                  type="text"
-                  name="city"
-                  placeholder="City"
-                  value={developerCity}
-                  onChange={(e) => {
-                    setDeveloperCity(e.target.value);
-                  }}
-                />
-              </div>
-              <div class="input-group">
-                <input
-                  class="input--style-3"
-                  type="text"
-                  name="phone"
-                  placeholder="Phone"
-                  value={developerPhone}
-                  onChange={(e) => {
-                    setDeveloperPhone(e.target.value);
-                  }}
-                />
-              </div>
-              <div class="input-group">
-                <input
-                  class="input--style-3"
-                  type="text"
-                  name="github"
-                  placeholder="GitHub"
-                  value={developerGithub}
-                  onChange={(e) => {
-                    setDeveloperGithub(e.target.value);
-                  }}
-                />
-              </div>
               <div class="p-t-10">
                 <button
-                  class="add-btnno"
+                  class="btn btn--pill btn--green"
                   onClick={(e) => {
                     e.preventDefault();
                     fetch("/api/v1/developers", {
@@ -144,41 +102,16 @@ const AddDev = () => {
                         email: developerEmail,
                         stack: developerStack,
                         photo: developerPhoto,
-                        bio: developerBio,
-                        city: developerCity,
-                        github: developerGithub,
-                        phone: developerPhone,
                       }),
                     })
                       .then((response) => response.json())
                       .then((data) => {
                         dispatch(fetchDevelopers());
                       });
-                      toast.success("You have succesfully added developer.", {
-                        position: "top-center",
-                        autoClose: 5000,
-                        hideProgressBar: false,
-                        closeOnClick: true,
-                        pauseOnHover: true,
-                        draggable: true,
-                        progress: undefined,
-                        theme: "light",
-                      });
-
-                      setDeveloperBio("");
-                      setDeveloperCity("");
-                      setDeveloperEmail("");
-                      setDeveloperGithub("");
-                      setDeveloperName("");
-                      setDeveloperPhone("");
-                      setDeveloperPhoto("");
-                      setDeveloperStack("");
-
                   }}
                 >
                   Add Developer
                 </button>
-                <ToastContainer />
               </div>
             </form>
           </div>
