@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import Footer from "../developer/footer";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchUser } from "../redux/users";
+import logo from "../../../assets/images/MICRONAUTS.png"
 
 const SideNav = () => {
   const dispatch = useDispatch();
@@ -15,7 +16,7 @@ const SideNav = () => {
   return (
     <nav className="sidenav">
       <img
-        src="https://th.bing.com/th/id/OIP.5Gn2Q1GP_6LtqjQeHt8fLAHaEo?pid=ImgDet&rs=1"
+        src={logo}
         alt="logo"
         className="logo "
       />
