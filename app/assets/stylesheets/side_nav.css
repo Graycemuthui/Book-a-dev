@@ -22,10 +22,6 @@
   color: white;
 }
 
-.logo {
-  height: 15vh;
-}
-
 .main {
   display: flex;
   flex-direction: row;
@@ -44,6 +40,7 @@ h1 {
 .social-cont {
   /* height: 60px; */
   margin-top: auto;
+  margin-bottom: 30px;
 }
 
 .topnav {
