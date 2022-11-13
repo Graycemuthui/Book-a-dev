@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 
-function AddBooking() {
+const AddBooking = () => {
   const params = useParams();
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
@@ -66,11 +66,7 @@ function AddBooking() {
                 city: city,
                 developer_id: Number(params.id),
               }),
-            })
-              .then((response) => response.json())
-              .then((data) => {
-                console.log(data);
-              });
+            }).then((response) => response.json());
 
             toast.success("You have succesfully booked this developer", {
               position: "top-center",
@@ -90,6 +86,6 @@ function AddBooking() {
       <ToastContainer />
     </div>
   );
-}
+};
 
 export default AddBooking;

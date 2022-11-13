@@ -14,196 +14,204 @@
  *= require_self
  */
 
-.image {
-  height: 20vw;
-  width: 50vw;
-  border-radius: 50%;
-}
+@media screen and (min-width: 801px) {
+  .topnav {
+    display: none;
+  }
 
-.booking-form {
-  display: flex;
-  flex-direction: column;
-  color: blueviolet;
-  padding: 34rem 33.47rem 20rem;
-  font-size: 1rem;
-  background-image: url('https://hks-siblab.org/wp-content/uploads/2020/11/Software-Engineer-vs.-Computer-Engineer.jpg');
-  text-align: center;
-}
+  .image {
+    height: 20vw;
+    width: 50vw;
+    border-radius: 50%;
+  }
 
-.booking-titles {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: rgb(245, 239, 239);
-  margin: -20rem 0 0 0;
-  padding: 5px 5px 2px;
-  font-size: 1.62rem;
-  text-align: center;
-}
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+    color: blueviolet;
+    padding: 34rem 33.47rem 20rem;
+    font-size: 1rem;
+    background-image: url("https://hks-siblab.org/wp-content/uploads/2020/11/Software-Engineer-vs.-Computer-Engineer.jpg");
+    text-align: center;
+  }
 
-.image-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .booking-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(245, 239, 239);
+    margin: -20rem 0 0 0;
+    padding: 5px 5px 2px;
+    font-size: 1.62rem;
+    text-align: center;
+  }
 
-.mainpage-heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .image-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.main-para {
-  color: gray;
-  margin: 0;
-}
+  .mainpage-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.display-dev {
-  display: flex;
-  justify-content: space-evenly;
-}
+  .main-para {
+    color: gray;
+    margin: 0;
+  }
 
-.dev-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .display-dev {
+    display: flex;
+    justify-content: space-evenly;
+  }
 
-.icons {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-}
+  .dev-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.icon-items {
-  border: 1px solid black;
-  border-radius: 40%;
-  padding: 5px;
-}
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
 
-a {
-  text-decoration: none;
-  color: black;
-}
+  .icon-items {
+    border: 1px solid black;
+    border-radius: 40%;
+    padding: 5px;
+  }
 
-.form {
-  margin-left: 5rem;
-}
+  a {
+    text-decoration: none;
+    color: black;
+  }
 
-.dev-details {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+  .form {
+    margin-left: 5rem;
+  }
 
-.dev-image {
-  height: 75vh;
-  width: 40vw;
-  border-radius: 30px;
-  padding: 2rem;
-}
+  .dev-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-.image-dev {
-  display: flex;
-  flex-direction: column;
-  margin-right: 3vw;
-}
+  .dev-image {
+    height: 75vh;
+    width: 40vw;
+    border-radius: 30px;
+    padding: 2rem;
+  }
 
-.mainpage-items a {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 1rem;
-}
+  .image-dev {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3vw;
+  }
 
-.links {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0.8rem;
-  background-color: rgb(94, 153, 36);
-  height: 10vh;
-}
+  .mainpage-items a {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+  }
 
-.links a {
-  color: rgb(235, 235, 235);
-  border: 1px solid;
-  border-radius: 15px;
-  padding: 3px;
-  margin-left: 3rem;
-}
+  .links {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.8rem;
+    background-color: rgb(94, 153, 36);
+    height: 10vh;
+  }
 
-.links a:hover {
-  background-color: rgb(64, 82, 7);
-  color: rgba(140, 152, 25, 0.684);
-}
+  .links a {
+    color: rgb(235, 235, 235);
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 3px;
+    margin-left: 3rem;
+  }
 
-.user-email {
-  color: rgb(48, 43, 43);
-  cursor: pointer;
-  margin-top: 1rem;
-}
+  .links a:hover {
+    background-color: rgb(64, 82, 7);
+    color: rgba(140, 152, 25, 0.684);
+  }
 
-.mainpage-items {
-  width: 82vw;
-}
+  .user-email {
+    color: rgb(48, 43, 43);
+    cursor: pointer;
+    margin-top: 1rem;
+  }
 
-.mainpage {
-  padding: 30px;
-}
+  .mainpage-items {
+    width: 82vw;
+  }
 
-.routes-cont {
-  width: 100%;
-}
+  .mainpage {
+    padding: 30px;
+  }
 
-.reserve-dev {
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+  .routes-cont {
+    width: 100%;
+  }
 
-.display-reservations {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
+  .mb {
+    display: none;
+  }
 
-.reserve-dev:hover {
-  background-color: rgb(94, 153, 36);
-  color: #fff;
-}
+  .reserve-dev {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-.reservation-heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-weight: 700;
-}
+  .display-reservations {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.user {
-  width: 45px;
-  height: 45px;
-}
+  .reserve-dev:hover {
+    background-color: rgb(94, 153, 36);
+    color: #fff;
+  }
 
-.reservations {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-}
+  .reservation-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+  }
 
-.sign {
-  align-self: center;
-  margin-top: 10px;
-}
+  .user {
+    width: 45px;
+    height: 45px;
+  }
 
-.splide__arrow {
-  width: 200px;
-  height: 200px;
-  background-color: aqua;
+  .reservations {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .sign {
+    align-self: center;
+    margin-top: 10px;
+  }
+
+  .splide__arrow {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+  }
 }

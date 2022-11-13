@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import "./AddDev.css";
 
-function AddDev() {
+const AddDev = () => {
   const [developerName, setDeveloperName] = useState("");
   const [developerEmail, setDeveloperEmail] = useState("");
   const [developerStack, setDeveloperStack] = useState("");
@@ -120,6 +119,6 @@ function AddDev() {
       </div>
     </div>
   );
-}
+};
 
 export default AddDev;

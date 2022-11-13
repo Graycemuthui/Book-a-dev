@@ -14,8 +14,12 @@ p {
   text-align: right;
 }
 
-.info-cont {
+.info-cont2 {
   width: 20vw;
+}
+
+.mb {
+  margin-top: 3rem;
 }
 
 .info-cont a {
@@ -29,13 +33,13 @@ p {
 
 .btn {
   background-color: rgb(94, 153, 36);
-  margin-top: 1rem;
+  margin-top: 6rem;
 }
 
 .developer {
   display: flex;
   flex-direction: row;
-  width: 90%;
+  width: 100%;
 }
 
 .back {

@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { fetchBookings } from "../redux/bookings";
 import { fetchDevelopers } from "../redux/developer";
 
-function Bookings() {
+const Bookings = () => {
   const dispatch = useDispatch();
   const bookings = useSelector((state) => state.bookings.bookings);
   const developers = useSelector((state) => state.developers.developers);
@@ -11,8 +11,6 @@ function Bookings() {
     dispatch(fetchBookings());
     dispatch(fetchDevelopers());
   }, []);
-  console.log(developers);
-  console.log(bookings);
   const displayBookings =
     bookings.length !== 0 ? (
       bookings.map((booking) => (
@@ -57,6 +55,6 @@ function Bookings() {
       <div className="display-reservations">{displayBookings}</div>
     </div>
   );
-}
+};
 
 export default Bookings;

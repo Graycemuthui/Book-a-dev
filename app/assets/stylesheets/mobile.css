@@ -1,24 +1,140 @@
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .dev-image {
+    width: 60%;
+  }
+
+  .developer {
+    display: flex;
+    flex-direction: column;
+  }
+
   .side-cont {
     display: none;
+  }
+
+  .reserved-dev {
+    width: 100vw;
   }
 
   .mainpage-items {
     width: 100vw;
   }
 
+  .display-dev {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   .mainpage {
     width: 100%;
+    padding: 30px;
+  }
+
+  .info-cont {
+    width: 90%;
+    margin: auto;
+  }
+
+  .bio {
+    width: 100px;
+  }
+
+  .image {
+    height: 20vw;
+    width: 20vw;
+    border-radius: 50%;
   }
 
   .routes-cont {
     width: 100%;
-    background-color: aqua;
-    justify-content: center;
   }
 
-  .splide {
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .dev-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .dev-info p {
+    height: 70px;
+  }
+
+  .dev-info a {
+    text-decoration: none;
+  }
+
+  .dev-info h2 {
+    color: black;
+  }
+
+  .image-dev {
+    width: 90%;
+    margin: auto;
+  }
+
+  .topnav {
+    display: block;
     width: 100%;
-    margin: 0;
+  }
+
+  .back {
+    display: none;
+  }
+
+  .icon-items {
+    border: 1px solid black;
+    border-radius: 40%;
+    padding: 5px;
+    color: black;
+  }
+
+  .reserve-dev {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .display-reservations {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .reserve-dev:hover {
+    background-color: rgb(94, 153, 36);
+    color: #fff;
+  }
+
+  .reservation-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+  }
+
+  .hd {
+    display: none;
+  }
+
+  .sign-out {
+    width: 40%;
+    margin: auto;
+    height: 60px;
   }
 }

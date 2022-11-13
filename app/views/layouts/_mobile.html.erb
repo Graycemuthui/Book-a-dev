@@ -1,0 +1,21 @@
+
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+<% if user_signed_in? %>
+  <a href="#home" class="active">Micronaut</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i class="fa fa-bars"></i>
+</a>
+  <div id="myLinks">
+    <a href="/">Developers</a>
+    <a href="/reserve">Reserve</a>
+    <a href="bookings">Bookings</a>
+    <% if can? :manage, :all %>
+    <a href="/add-developer">Add Developer</a>
+    <a href="/delete-developers">Remove Developer</a>
+    <%= link_to "Sign Out", destroy_user_session_path, method: :delete ,class:"btn btn-danger sign-out" %>
+    <%end%>
+  </div>
+  <%end%>
+</div>
