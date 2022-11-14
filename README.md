@@ -50,7 +50,8 @@ To get a local copy up and running follow these simple example steps. In your te
 git clone https://github.com/Graycemuthui/Book-a-dev.git
 
 Then run:
-
+ 
+ 
 cd Book-a-dev
 Open in your preferred text editor. Run code . to open VScode.
 
@@ -125,6 +126,7 @@ Example:
 
 ## Author2
 
+
 👤 **MICHAELMUNAVU83**
 
 - GitHub: [@MICHAELMUNAVU83](https://github.com/MICHAELMUNAVU83)
@@ -141,11 +143,11 @@ Example:
 
 ## Author4
 
-👤 **RICHMONDADU-KYERE**
+👤 **RICHMOND ADU-KYERE**
 
 - GitHub: [@assadounto](https://github.com/assadounto)
 - Twitter: [@adukyerer](https://twitter.com/adukyerer)
-- LinkedIn: [@richmond-adu-kyere](https://www.linkedin.com/in/richmond-adu-kyere-911693236/)
+- LinkedIn: [@richmond-adu-kyere](https://www.linkedin.com/in/richmond-adu-kyere/)
 
 ## Author5
 
@@ -171,4 +173,7 @@ Feel free to check the [issues page](https://github.com/Graycemuthui/Book-a-dev/
 
 ## 📝 License
 
+
 This project is [MIT](LICENSE) licensed.
+
+

@@ -1,2 +1,2 @@
-web: rails server -p 3001
+web: bundle exec rails s -p 3000
 js: yarn build --watch
